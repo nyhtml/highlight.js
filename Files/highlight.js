@@ -5,9 +5,10 @@
  * Updated: 2026-07-20
  */
 
+// DOMContentLoaded wrapper:
 document.addEventListener('DOMContentLoaded', () => {
     const opts = { passive: false };
-
+// Interaction‑blocking listeners:
     document.addEventListener('dragstart', e => e.preventDefault(), opts);
     document.addEventListener('selectstart', e => e.preventDefault(), opts);
     document.addEventListener('contextmenu', e => e.preventDefault(), opts);
